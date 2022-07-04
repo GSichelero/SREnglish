@@ -19,7 +19,7 @@ import com.example.srenglish.data.db.entity.relationship.GameWordCrossRef
     WordEntity::class,
     DeckWordCrossRef::class,
     GameWordCrossRef::class
-                     ], version = 1)
+                     ], version = 62)
 abstract class AppDatabase: RoomDatabase() {
 
     abstract val deckDAO: DeckDAO
@@ -38,7 +38,7 @@ abstract class AppDatabase: RoomDatabase() {
                         context,
                         AppDatabase::class.java,
                         "app_database"
-                    ).build()
+                    ).fallbackToDestructiveMigration().build()
                 }
 
                 return instance

@@ -77,7 +77,7 @@ class DatabaseDataSource(
         gameDAO.insertGameWordCrossRef(game_word_x_ref)
     }
 
-    override suspend fun getGameWithWords(game_id: Long): LiveData<List<GameWithWords>> {
+    override suspend fun getGameWithWords(game_id: Long): List<GameWithWords> {
         return gameDAO.getGameWithWords(game_id)
     }
 

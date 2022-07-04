@@ -5,6 +5,17 @@
       <map>
         <entry key="..\:/Users/Master/AndroidStudioProjects/SREnglish/app/src/main/res/layout/activity_main.xml" value="0.1331521739130435" />
         <entry key="..\:/Users/Master/AndroidStudioProjects/SREnglish/app/src/main/res/layout/fragment_deck.xml" value="0.22" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/activity_create_account.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/activity_login.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/activity_main.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/activity_main_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/activity_play_ground.xml" value="0.2" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/fragment_dashboard.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/fragment_deck.xml" value="0.2" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/fragment_home.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/fragment_notifications.xml" value="0.11354166666666667" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/layout/second_activity.xml" value="0.1125" />
+        <entry key="..\:/Users/Master/SREnglish/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11354166666666667" />
       </map>
     </option>
   </component>

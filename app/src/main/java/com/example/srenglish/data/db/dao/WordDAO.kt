@@ -1,16 +1,14 @@
 package com.example.srenglish.data.db.dao
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 import com.example.srenglish.data.db.entity.WordEntity
+import com.example.srenglish.data.db.entity.relationship.GameWithWords
 
 @Dao
 interface WordDAO {
-    @Insert
-    suspend fun insert(word: WordEntity): Long
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insert(word: WordEntity): Long
 
     @Update
     suspend fun update(word: WordEntity)
@@ -20,4 +18,7 @@ interface WordDAO {
 
     @Query("SELECT * FROM word")
     fun getAll(): LiveData<List<WordEntity>>
+
+    @Query("SELECT * FROM word WHERE word_id = :word_id")
+    fun selectWord(word_id: Long): WordEntity
 }

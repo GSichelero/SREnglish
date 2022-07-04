@@ -27,7 +27,7 @@ interface DatabaseRepository {
 
     suspend fun insertGameWordCrossRef(game_id: Long, word_id: Long, day: Long, times_seen: Long)
 
-    suspend fun getGameWithWords(game_id: Long): LiveData<List<GameWithWords>>
+    suspend fun getGameWithWords(game_id: Long): List<GameWithWords>
 
 // WORDS
     suspend fun insertWord(question: String, answer: String): Long
