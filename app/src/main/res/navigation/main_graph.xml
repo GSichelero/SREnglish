@@ -3,11 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/deck">
+    app:startDestination="@id/deckList">
+
+    <fragment
+        android:id="@+id/deckList"
+        android:name="com.example.srenglish.ui.decklist.DeckList"
+        android:label="Decks"
+        tools:layout="@layout/fragment_deck_list" />
 
     <fragment
         android:id="@+id/deck"
         android:name="com.example.srenglish.ui.deck.Deck"
-        android:label="fragment_deck"
+        android:label="Add Deck"
         tools:layout="@layout/fragment_deck" />
+
 </navigation>

@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.gsichelero.contactmanager.extension.hideKeyboard
 import com.example.srenglish.R
 import com.example.srenglish.data.db.AppDatabase
@@ -46,6 +47,9 @@ class Deck : Fragment(R.layout.fragment_deck) {
                 is DeckViewModel.DeckState.Inserted -> {
                     clearFields()
                     hideKeyboard()
+                    requireView().requestFocus()
+
+                    findNavController().popBackStack()
                 }
             }
         }

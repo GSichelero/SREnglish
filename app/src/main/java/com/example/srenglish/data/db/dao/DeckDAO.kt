@@ -19,5 +19,5 @@ interface DeckDAO {
     suspend fun delete(deck_id: Long)
 
     @Query("SELECT * FROM deck")
-    fun getAll(): LiveData<List<DeckEntity>>
+    suspend fun getAll(): List<DeckEntity>
 }

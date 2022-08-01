@@ -35,7 +35,7 @@ class DatabaseDataSource(
         deckDAO.delete(deck_id)
     }
 
-    override suspend fun getAllDecks(): LiveData<List<DeckEntity>> {
+    override suspend fun getAllDecks(): List<DeckEntity> {
         return deckDAO.getAll()
     }
 

@@ -14,7 +14,7 @@ interface DatabaseRepository {
 
     suspend fun deleteDeck(deck_id: Long)
 
-    suspend fun getAllDecks(): LiveData<List<DeckEntity>>
+    suspend fun getAllDecks(): List<DeckEntity>
 
 // GAMES
     suspend fun insertGame(name: String, words_per_day: Long, deck_id: Long): Long
